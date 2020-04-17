@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "maven" : ["Maven Pro", "sans serif"]
+      }
+    },
   },
   variants: {},
   plugins: [],
