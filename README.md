@@ -1,5 +1,5 @@
 # Marvel
-Marvel Bootstrap template redisigned using (tailwindcss](https://tailwindcss.com/) inspired from [Marvel](https://www.tooplate.com/view/2115-marvel).
+Marvel Bootstrap template redisigned using [tailwindcss](https://tailwindcss.com/) inspired from [Marvel](https://www.tooplate.com/view/2115-marvel).
 
 
 ## Tools & Languages
