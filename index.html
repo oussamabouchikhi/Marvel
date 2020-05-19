@@ -8,8 +8,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <style>
+      #menu-toggle:checked + #menu {
+        /* If element with id menu-toggle is checked apply these styles to his next sibling with id menu */
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="text-3xl font-maven font-bold">Maven</h1>
+    <!-- Header Section Begin -->
+    <header class="h-screen font-maven">
+      <div class="container mx-auto px-4 py-2 md:px-8 flex justify-between flex-wrap">
+        <div class="lg:pl-4">
+          <a class="text-2xl py-2" href="/">
+            <i class="far fa-gem text-2xl py-2"></i>
+            <span class="capitalize">marvel</span>
+          </a>
+        </div>
+        <!-- Menu button -->
+        <label for="menu-toggle" class="block md:hidden cursor-pointer self-center mr-2">
+          <svg class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+        <!-- Using this hidden chekbox we check if user clicked on menu button -->
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden w-full text-center md:flex md:flex-grow md:w-auto" id="menu">
+          <ul class="pt-5 md:p-0 md:flex md:flex-grow md:justify-center">
+            <li class="py-2 mx-4"><a href="#" class="capitalize">about</a></li>
+            <li class="py-2 mx-4"><a href="#" class="capitalize">projects</a></li>
+            <li class="py-2 mx-4"><a href="#" class="capitalize">resume</a></li>
+            <li class="py-2 mx-4"><a href="#" class="capitalize">contact</a></li>
+          </ul>
+          <div class="mt-2 lg:pr-4">
+            <i class="fas fa-moon"></i>
+            <span>switch mode</span>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!-- Header Section End -->
   </body>
 </html>
