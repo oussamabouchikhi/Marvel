@@ -7,10 +7,12 @@
     "dev": "postcss src/main.css -o dist/main.css -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oussama Bouchikhi",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^9.8.0",
+    "postcss": "^7.0.30",
+    "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.2.0"
   }
 }
