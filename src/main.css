@@ -1,5 +1,71 @@
 @tailwind base;
 
 @tailwind components;
+/*** YOUR CUSTUM COMPONENTS SHOULD GO HERE ***/
+
+.navbar {
+    @apply px-4 py-2 flex justify-between flex-wrap
+}
+
+@screen md { /* Apply these styles on medium screens and above */
+    .navbar {
+        @apply px-8
+    }
+}
+
+.menuIcon {
+    @apply block cursor-pointer self-center mr-2
+}
+
+.menuItemsContainer {
+    @apply hidden w-full text-center
+}
+
+.menuItems {
+    @apply pt-5
+}
+
+@screen md {
+    .menuItemsContainer {
+        @apply flex flex-grow w-auto
+    }
+    .menuItems {
+        @apply p-0 flex flex-grow justify-center
+    }
+}
+
+@screen md {
+    .menuIcon {
+        @apply hidden 
+    }
+}
+
+.banner {
+    @apply pb-20 px-4 flex flex-wrap justify-center
+}
+
+@screen md {
+    .banner {
+        @apply px-8 
+    }
+}
+
+.btn {
+    @apply w-full py-3 px-8 rounded-full font-semibold my-1
+}
+
+.btn-grey {
+    @apply bg-grey text-textColor
+}
+
+@screen md {
+    .btn-grey {
+        @apply mr-2
+    }
+}
+
+.btn-purple {
+    @apply bg-secondaryColor text-white
+}
 
 @tailwind utilities;
