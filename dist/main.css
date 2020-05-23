@@ -635,14 +635,6 @@ video {
   flex-wrap: wrap
 }
 
-@media (min-width: 768px) { /* Apply these styles on medium screens and above */
-
-  .navbar {
-    padding-left: 2rem;
-    padding-right: 2rem
-  }
-}
-
 .menuIcon {
   display: block;
   cursor: pointer;
@@ -660,27 +652,6 @@ video {
   padding-top: 1.25rem
 }
 
-@media (min-width: 768px) {
-  .menuItemsContainer {
-    display: flex;
-    flex-grow: 1;
-    width: auto
-  }
-
-  .menuItems {
-    padding: 0;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center
-  }
-}
-
-@media (min-width: 768px) {
-  .menuIcon {
-    display: none
-  }
-}
-
 .banner {
   padding-bottom: 5rem;
   padding-left: 1rem;
@@ -688,13 +659,6 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center
-}
-
-@media (min-width: 768px) {
-  .banner {
-    padding-left: 2rem;
-    padding-right: 2rem
-  }
 }
 
 .btn {
@@ -714,15 +678,80 @@ video {
   color: #5B5B5B
 }
 
-@media (min-width: 768px) {
-  .btn-grey {
-    margin-right: 0.5rem
-  }
-}
-
 .btn-purple {
   background-color: #47465A;
   color: #FFFFFF
+}
+
+.owl-item > img {
+  max-width: 64rem !important;
+  display: inline-block !important
+}
+
+.owl-prev > span, .owl-next > span {
+  display: none
+}
+
+.owl-prev::before, .owl-next::before {
+  background: none;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: "FontAwesome";
+  color: #47465A;
+  font-size: 70px;
+  -webkit-text-stroke: 3px #FFF;
+  text-stroke: 3px #FFF;
+}
+
+.owl-prev::before {
+  content: "\f060";
+  left: 0;
+}
+
+.owl-next::before {
+  content: "\f061";
+  right: 0;
+}
+
+.owl-next > span {
+  display: none
+}
+
+@media (min-width: 768px) { /* Apply these styles on medium screens and above */
+
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+
+  .menuItemsContainer {
+    display: flex;
+    flex-grow: 1;
+    width: auto
+  }
+
+  .menuItems {
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center
+  }
+
+  .menuIcon {
+    display: none
+  }
+
+  .banner {
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+
+  .btn-grey {
+    margin-right: 0.5rem
+  }
 }
 
 .sr-only {

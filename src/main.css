@@ -7,12 +7,6 @@
     @apply px-4 py-2 flex justify-between flex-wrap
 }
 
-@screen md { /* Apply these styles on medium screens and above */
-    .navbar {
-        @apply px-8
-    }
-}
-
 .menuIcon {
     @apply block cursor-pointer self-center mr-2
 }
@@ -21,33 +15,12 @@
     @apply hidden w-full text-center
 }
 
-.menuItems {
-    @apply pt-5
-}
-
-@screen md {
-    .menuItemsContainer {
-        @apply flex flex-grow w-auto
-    }
-    .menuItems {
-        @apply p-0 flex flex-grow justify-center
-    }
-}
-
-@screen md {
-    .menuIcon {
-        @apply hidden 
-    }
+.menuItems { 
+    @apply pt-5 
 }
 
 .banner {
     @apply pb-20 px-4 flex flex-wrap justify-center
-}
-
-@screen md {
-    .banner {
-        @apply px-8 
-    }
 }
 
 .btn {
@@ -58,14 +31,65 @@
     @apply bg-grey text-textColor
 }
 
-@screen md {
+.btn-purple {
+    @apply bg-secondaryColor text-white
+}
+
+.owl-item > img {
+    @apply max-w-5xl inline-block !important
+}
+
+.owl-prev > span, .owl-next > span {
+    @apply hidden 
+}
+
+.owl-prev::before, .owl-next::before {
+    background: none;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: "FontAwesome";
+    color: #47465A;
+    font-size: 70px;
+    -webkit-text-stroke: 3px #FFF;
+            text-stroke: 3px #FFF;
+}
+
+.owl-prev::before {
+    content: "\f060";
+    left: 0;
+}
+
+.owl-next::before {
+    content: "\f061";
+    right: 0;
+}
+
+.owl-next > span {
+    @apply hidden 
+}
+
+@screen md { /* Apply these styles on medium screens and above */
+    .navbar {
+        @apply px-8
+    }
+    .menuItemsContainer {
+        @apply flex flex-grow w-auto
+    }
+    .menuItems {
+        @apply p-0 flex flex-grow justify-center
+    }
+    .menuIcon {
+        @apply hidden 
+    }
+    .banner {
+        @apply px-8 
+    }
     .btn-grey {
         @apply mr-2
     }
-}
-
-.btn-purple {
-    @apply bg-secondaryColor text-white
 }
 
 @tailwind utilities;
