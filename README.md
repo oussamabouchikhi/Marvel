@@ -1,16 +1,31 @@
-# 🚀 Marvel
+# Marvel 🚀
 Marvel Bootstrap template redisigned using [tailwindcss](https://tailwindcss.com/) inspired from [Marvel](https://www.tooplate.com/view/2115-marvel).
  
-## 📸 Screenshots
+## Screenshots 📸
 
-## 🎯 Tools & Languages
+## Tools & Languages 🎯
  - HTML5
+ - postcss
+ - autoprefixer
  - [Fontawesome](https://fontawesome.com/)
  - [Tailwindcss](https://tailwindcss.com/)
  - [VSCode](https://code.visualstudio.com/)
  
- ## :octocat: Contributing
- Pull requests are welcome, feel free to fork this repo.
+## Usage
+```bash
+# 1. Clone this repo
+~ git clone https://github.com/oussamabouchikhi/tailwindcourse.git
+# 2. cd into the project folder
+~ cd tailwindcourse
+# 3. Install dependencies
+~ npm install
+# 4. Run server
+~ npm run dev
+# 5. Now you can visit the website at http://127.0.0.1:5500/
+```
+
+ ## Contributing :octocat:
+ Pull requests are welcome, feel free to ```fork``` this repo.
  
- ## 📃 License
+ ## License 📃
  This project is open-sourced under the [MIT license](https://opensource.org/licenses/MIT).
