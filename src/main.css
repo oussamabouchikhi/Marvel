@@ -99,14 +99,25 @@
     width: 3px;
     height: 100%;
     position: absolute;
-    top: 50%;
     left: 38px;
+}
+.timeline-year {
+    @apply w-20 h-20 bg-purple rounded-full relative float-left;
 }
 .timeline-year > span {
     position: absolute;
     top: 50%;
     left: 50%;
-    @apply transform -translate-y-1/2 -translate-x-1/2
+    @apply transform -translate-y-1/2 -translate-x-1/2;
+}
+.job {
+    @apply text-headingColor2 font-bold text-3xl ml-8;
+}
+.company {
+    @apply text-base text-secondaryColor ml-3 font-black;
+}
+.description {
+    @apply text-textColor tracking-wide text-lg font-light ml-24;
 }
 
 @tailwind utilities;

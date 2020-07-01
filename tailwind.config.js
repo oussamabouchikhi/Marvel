@@ -10,7 +10,9 @@ module.exports = {
       textColor: "#5B5B5B",
       grey: "#EEEEEE",
       secondaryColor: "#47465A",
-      purple: "#48465B"
+      purple: "#48465B",
+      headingColor: "#353535",
+      headingColor2: "#484848"
     }
   },
   variants: {},
