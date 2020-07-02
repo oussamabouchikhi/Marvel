@@ -794,14 +794,16 @@ video {
   color: #484848;
   font-weight: 700;
   font-size: 1.875rem;
-  margin-left: 2rem;
+  margin-left: 6rem;
+  display: block;
 }
 
 .company {
   font-size: 1rem;
   color: #47465A;
-  margin-left: 0.75rem;
   font-weight: 900;
+  margin-left: 6rem;
+  display: block;
 }
 
 .description {
@@ -810,6 +812,22 @@ video {
   font-size: 1.125rem;
   font-weight: 300;
   margin-left: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .job {
+    display: inline;
+    margin-left: 2rem;
+  }
+
+  .company {
+    display: inline;
+    margin-left: 0.75rem;
+  }
+
+  .timeline-year {
+    margin-right: 0
+  }
 }
 
 .sr-only {
