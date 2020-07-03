@@ -120,6 +120,12 @@
     @apply text-textColor tracking-wide text-lg font-light ml-24;
 }
 
+.input {
+    @apply border-solid border outline-none w-4/7 px-4 py-2;
+}
+.textarea {
+    @apply border-solid border outline-none w-full px-4 py-2 mt-3
+}
 @screen lg {
     .job {
         @apply inline ml-8;
