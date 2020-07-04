@@ -8,16 +8,17 @@ module.exports = {
         white: "#FFFFFF",
         textColor: "#5B5B5B",
         grey: "#EEEEEE",
+        primaryColor: "#FFC200",
         secondaryColor: "#47465A",
         purple: "#48465B",
         headingColor: "#353535",
         headingColor2: "#484848"
       },
-      spacing: {
-       '500': '31.25rem'
-      },
       width: {
         '4/7': '45%'
+      },
+      fontSize: {
+        '2xlPlus': '1.75rem'
       }
     },
   },
