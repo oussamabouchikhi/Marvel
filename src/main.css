@@ -57,14 +57,16 @@
             text-stroke: 3px #FFF;
 }
 
-.owl-prev::before {
-    content: "\f060";
-    left: 0;
-}
-
-.owl-next::before {
-    content: "\f061";
-    right: 0;
+@screen sm {
+    .owl-prev::before {
+        content: "\f060";
+        left: 0;
+    }
+    
+    .owl-next::before {
+        content: "\f061";
+        right: 0;
+    }
 }
 
 .owl-next > span {
@@ -121,20 +123,23 @@
 }
 
 .input {
-    @apply border-solid border outline-none w-4/7 px-4 py-2;
+    @apply border-solid border outline-none w-full px-4 py-3 my-3;
 }
 .textarea {
-    @apply border-solid border outline-none w-full px-4 py-2 mt-3
+    @apply border-solid border outline-none w-full px-4 py-2 my-3
 }
 @screen lg {
-    .job {
-        @apply inline ml-8;
+    .input { 
+        @apply w-4/7; 
     }
-    .company {
-        @apply inline ml-3;
+    .job { 
+        @apply inline ml-8; 
     }
-    .timeline-year {
-        @apply mr-0
+    .company { 
+        @apply inline ml-3; 
+    }
+    .timeline-year { 
+        @apply mr-0 
     }
 }
 @tailwind utilities;
