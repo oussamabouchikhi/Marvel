@@ -128,6 +128,7 @@
 .textarea {
     @apply border-solid border outline-none w-full px-4 py-2 my-3
 }
+
 @screen lg {
     .input { 
         @apply w-4/7; 
@@ -142,4 +143,23 @@
         @apply mr-0 
     }
 }
+
+.headroom--pinned {
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    max-width: 100%;
+    box-shadow: 0px 1px 20px #66666638;
+}
+.headroom--unpinned {
+    display: none;
+}
+
+.headroom--top {
+box-shadow: none;
+position: static;
+}
+
+
 @tailwind utilities;

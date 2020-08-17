@@ -862,6 +862,24 @@ video {
   }
 }
 
+.headroom--pinned {
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+  z-index: 9999;
+  max-width: 100%;
+  box-shadow: 0px 1px 20px #66666638;
+}
+
+.headroom--unpinned {
+  display: none;
+}
+
+.headroom--top {
+  box-shadow: none;
+  position: static;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

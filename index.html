@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Header Section Begin -->
-    <header class="h-auto xl:h-screen font-maven">
+    <header class="h-auto xl:h-screen font-maven max-w-full">
       <!-- Navbar -->
       <div class="container mx-auto navbar">
         <div class="lg:pl-4">
@@ -62,7 +62,7 @@
       <div class="container mx-auto banner">
         <div class="w-full lg:w-1/2 px-2 pt-32">
           <span class="mx-4 py-2 text-textColor font-semibold text-lg">Welcome to my portfolio!</span>
-          <h1 class="text-5xl font-semibold my-4">Hey folks, I'm <span>Web Designer UI Speciaalist</span></h1> <!-- #FAC11C -->
+          <h1 class="text-5xl font-semibold my-4">Hey folks, I'm <span class="element text-primaryColor"></span></h1> <!-- #FAC11C -->
           <p class="mb-4 text-textColor tracking-wide text-lg">Building a successful product is a challenge, I am highly energetic in user experience design, interfaces and web development.</p>
           <div class="w-full flex flex-wrap">
             <button class="md:w-auto btn btn-grey"><i class="far fa-file-alt"></i> Download Resume</button>
@@ -252,17 +252,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Owl caroussel 2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
-    <!-- call the Owl initializer function -->
-    <script>
-      $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-          items: 1, // Show only 1 item
-          loop: true, // Items will always be displayed (after the last item the 1st will be re-displayed)
-          nav: true, //Show navigation icons <>
-          autoPlay: true, // Auto play carousel
-          autoplayHover: false, // Stop plaing carousel on item(image) hover
-        });
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha512-52YmORpI2a/kIVQ9S4ELQTjKcbxRzFIhq967wO8lzKrs+45JA/24XCX+dJarTgPA/8NN2qVokQNriWmdWRgeTA==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="dist/main.js"></script>
   </body>
 </html>
