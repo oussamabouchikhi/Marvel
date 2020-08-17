@@ -1,26 +1,29 @@
 # Marvel 🚀
 Marvel Bootstrap template redisigned using [tailwindcss](https://tailwindcss.com/) inspired from [Marvel](https://www.tooplate.com/view/2115-marvel).
- 
-## Screenshots 📸
 
-## Tools & Languages 🎯
- - HTML5
+## Tools & Languages 🛠️
  - postcss
  - autoprefixer
  - [Fontawesome](https://fontawesome.com/)
  - [Tailwindcss](https://tailwindcss.com/)
+ - [owl carousel](https://github.com/evenicoulddoit/owl-carousel)
+ - [headroom.js](https://github.com/WickyNilliams/headroom.js)
+ - [typed.js](https://github.com/mattboldt/typed.js/)
  - [VSCode](https://code.visualstudio.com/)
+
  
-## Usage
+## Usage 📋
 ```bash
 # 1. Clone this repo
-~ git clone https://github.com/oussamabouchikhi/tailwindcourse.git
+~ git clone https://github.com/oussamabouchikhi/Marvel.git
 # 2. cd into the project folder
-~ cd tailwindcourse
+~ cd Marvel
 # 3. Install dependencies
 ~ npm install
 # 4. Compile files
 ~ npm run dev
+# or (if you face a problem on windows)
+~ npm run dev-win
 # 5. Run with live-server
 # Now you can visit the website at http://127.0.0.1:5500/
 ```
