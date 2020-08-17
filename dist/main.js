@@ -8,6 +8,32 @@ $(document).ready(function(){
       autoPlay: true, // Auto play carousel
       autoplayHover: false, // Stop plaing carousel on item(image) hover
     });
+    
+    // Dark mode
+    $(".color-mode").click(function() {
+        $(".body").toggleClass('dark-mode')
+    });
+});
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          nav: false
+        },
+        768: {
+          nav: true
+        },
+      }
+    });
+    $('.color-mode').click(function () {
+      $('body').toggleClass('dark-mode')
+    });
   });
 
 // Typed.js
