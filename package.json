@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss src/main.css -o dist/main.css -w"
+    "dev-win": "set NODE_ENV=development && postcss src/main.css -o dist/css/main.css -w",
+    "build-win": "set NODE_ENV=production && postcss src/main.css -o dist/css/main.css",
+    "dev": "NODE_ENV=development postcss src/main.css -o dist/css/main.css -w",
+    "build": "NODE_ENV=production postcss src/main.css -o dist/css/main.css"
   },
   "keywords": [],
   "author": "Oussama Bouchikhi",
@@ -14,5 +17,8 @@
     "postcss": "^7.0.30",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0"
   }
 }

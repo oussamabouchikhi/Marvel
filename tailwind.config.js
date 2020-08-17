@@ -1,4 +1,5 @@
 module.exports = {
+  purge: false,
   theme: {
     extend: {
       fontFamily: {
@@ -23,5 +24,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: []
 }
